@@ -8,6 +8,8 @@ public class TotalTuitionBill {
 	 *double percentatgeIncreaseForTuition, double repaymentAPR, and double repaymentTerm, 
 	 *and returns a value for the total amount of money that you will have to pay for your uninterrupted
 	 *four years of college
+	 *
+	 *@author olivias94
 	 */
 
 	//declare private variables
@@ -63,10 +65,13 @@ public class TotalTuitionBill {
 	
 	
 	public double returnTotalTuitionCost(){
-		/*This method caluculates the total tuition for the 4 years you spenc at college.
+		/**This method calculates the total tuition for the 4 years you spend at college.
 		 *This only takes into account the tuition and tuition increase percentage, it does not
 		 *include anything about loan repayment. Loan repayment is calculated by the method PMT 
 		 *from the imported Apache FincnaceLib library
+		 *
+		 *@param none
+		 *@return totalTuitionCost
 		 */
 		for (int i = 1; i<5; i++){
 			initialTuitionCost = (initialTuitionCost*(1 + percentatgeIncreaseForTuition));
