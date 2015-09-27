@@ -20,13 +20,13 @@ public class TotalTuitionBill {
 	private double repaymentTerm;
 
 	//constructors
-	TotalTuitionBill(){
+	public TotalTuitionBill(){
 	}
-	TotalTuitionBill(double newITC, double newPIFT, double newRAPR, double newRT){
-		initialTuitionCost = newITC;
-		percentatgeIncreaseForTuition = newPIFT;
-		repaymentAPR = newRAPR;
-		repaymentTerm = newRT;
+	public TotalTuitionBill(double newITC, double newPIFT, double newRAPR, double newRT){
+		this.initialTuitionCost = newITC;
+		this.percentatgeIncreaseForTuition = newPIFT;
+		this.repaymentAPR = newRAPR;
+		this.repaymentTerm = newRT;
 	}
 	
 	//getters and setters
